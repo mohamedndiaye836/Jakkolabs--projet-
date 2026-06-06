@@ -1,0 +1,345 @@
+/* --- DEBUT DE SECTION : RESET ET STYLE GLOBAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d3dbd5;
+}
+
+/* --- DEBUT SECTION : BANNIERE GEW --- */
+.top-alert {
+    background: linear-gradient(180deg, #1e3a2c 0%, #111111 100%);
+    color: white;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+/* --- FIN SECTION : BANNIERE GEW --- */
+
+/* --- DEBUT DE SECTION : BANNIERE NOIRE --- */
+.top-banner {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+.top-banner a {
+    color: #4c8bf5;
+    text-decoration: underline;
+}
+/* --- FIN DE SECTION : BANNIERE NOIRE --- */
+
+/* --- DEBUT DE SECTION : LAYOUT --- */
+.button-area {
+    margin-bottom: 100px; /* Espace conséquent avant le footer */
+}
+/* --- FIN DE SECTION : LAYOUT --- */
+
+/* --- DEBUT DE SECTION : STYLE DU BOUTON --- */
+.btn-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid #29a347;
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-green:hover, .btn-green:active {
+    background-color: #29a347;
+    color: #000000 !important;
+}
+
+.btn-icon {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0);
+}
+
+.btn-green:hover .btn-icon {
+    transform: translateX(5px); /* Animation simple et propre pour le mail */
+}
+
+.social-ln {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid #29a347;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.social-ln img {
+    width: 18px;
+}
+
+.social-ln:hover {
+    background-color: #29a347;
+}
+
+.social-ln:hover img {
+    filter: brightness(0) invert(1);
+}
+/* --- FIN DE SECTION : STYLE DU BOUTON --- */
+
+
+/* --- DEBUT SECTION : BACKGROUND DEGRADÉ --- */
+.dark-footer {
+    /* Dégradé du vert foncé vers le noir pour l'effet de profondeur */
+    background: linear-gradient(180deg, #1e3a2c 0%, #111111 100%);
+    color: white;
+    padding: 60px 20px 30px 20px;
+    border-radius: 30px 30px 0 0;
+}
+
+.contact-info {
+    font-style: normal; /* Annule l'italique par défaut de la balise address */
+}
+/* --- FIN SECTION : BACKGROUND DEGRADÉ --- */
+
+/* --- FIN SECTION : FOOTER LOGO ET TEXTE --- */
+
+
+
+
+/* --- DEBUT SECTION : STYLE HERO (LOGO + TITRE) --- */
+.hero-section {
+    /* Le dégradé commence en haut et s'arrête en bas de cette section */
+    background: linear-gradient(180deg, #f4fbf6 0%, #ffffff 100%);
+    padding: 40px 20px;
+    text-align: left; /* Aligné à gauche comme sur ton modèle */
+}
+
+.main-logo {
+    width: 180px;
+    mix-blend-mode: multiply; /* Pour que le logo se fonde dans le vert pâle */
+}
+
+h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+/* --- FIN SECTION : STYLE HERO --- */
+
+
+
+
+/* --- DEBUT SECTION : STYLE DES LIENS --- */
+a {
+    color: #29a347;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- DEBUT SECTION : LOGO FOOTER --- */
+.footer-logo {
+    width: 140px;             /* Taille discrète et pro */
+    margin-bottom: 30px;      /* Crée l'espace avant le numéro de téléphone */
+    display: block;           /* Force le texte à aller à la ligne en dessous */
+    background: #1e3a2c;
+
+}
+
+
+
+
+    
+
+/* --- FIN SECTION : FIX LOGO FOOTER --- */
+
+.label {
+    color: #acaaaa;           /* Gris clair pour les intitulés (Téléphone, Mail) */
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.value {
+    color: #29a347; /* Vert clair pour l'adresse mail et le téléphone */
+             text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+/* --- FIN SECTION : LOGO FOOTER --- */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Ajoute une ligne de séparation discrète */
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+.footer-social {
+    margin-top: 0;
+}
+
+.footer-social img {
+    width: 24px;
+    filter: brightness(0) invert(1); /* Rend l'icône blanche pour le fond sombre */
+    transition: opacity 0.3s ease;
+    margin-right: 15px;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
+
+/* --- DEBUT SECTION : STYLES FORMULAIRE GEW --- */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: normal;
+    padding: 0 10px;
+    color: #333;
+}
+
+.radio-group, .checkbox-group {
+    margin-top: 10px;
+    text-align: left; /* Alignement du texte des options */
+}
+
+.radio-group input, .checkbox-group input {
+    margin-right: 8px;
+    vertical-align: middle; /* Aligne l'input avec le label */
+}
+
+.radio-group label, .checkbox-group label {
+    margin-right: 15px;
+    font-weight: normal; /* Annule le gras potentiel des labels input-field */
+    display: inline-block !important; /* Force l'affichage côte à côte */
+    width: auto !important; /* Empêche le label de prendre toute la ligne */
+    margin-bottom: 0 !important; /* Supprime l'espacement du bas pour l'alignement */
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    font-family: Arial, sans-serif; /* Cohérence de la police */
+    min-height: 80px; /* Hauteur minimale pour les zones de texte */
+}
+
+.deadline {
+    font-weight: normal;
+    color: #e44d26; /* Couleur distinctive pour la date limite */
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.gew-date {
+    font-weight: normal;
+    color: #1e3a2c;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.form-subtitle {
+    color: #053a12;
+    margin-bottom: 20px;
+}
+/* --- FIN SECTION : STYLES FORMULAIRE GEW --- */
+
+/* --- STYLE PAGE INSCRIPTION --- */
+.form-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.form-container {
+    background: white;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+    box-shadow: none;
+    padding: 60px 10%;
+    box-sizing: border-box;
+}
+
+.registration-form {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #1e3a2c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.back-home {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* --- STYLE SPECIFIQUE POUR L'ENTETE DU FORMULAIRE --- */
+.form-header-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4fbf6; /* Fond vert très clair pour faire ressortir la bannière */
+}
+
+.form-banner {
+    max-width: 800px;
+    width: 95%;
+    height: auto;
+    border-radius: 8px;
+}

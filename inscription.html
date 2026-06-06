@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokkolabs - Inscription GEW 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DEBUT ENTETE / LOGO -->
+    <div class="form-header-container">
+        <a href="index.html"><img src="logo.jpeg" alt="Bannière GEW 2024" class="form-banner"></a>
+    </div>
+    <!-- FIN ENTETE / LOGO -->
+
+    <!-- DEBUT CONTENU DE LA PAGE -->
+    <main class="form-page">
+        <!-- DEBUT SECTION FORMULAIRE D'INSCRIPTION -->
+        <section class="form-container">
+            <h1>SEMAINE MONDIALE DE L'ENTREPRENEURIAT</h1>
+            <p class="gew-date">DU 18 AU 24 NOVEMBRE 2024</p>
+            <h2 class="form-subtitle">Inscription GEW 2024</h2>
+            <p>La Semaine Mondiale de l’Entrepreneuriat (Global Entrepreneurship Week, GEW) est le plus grand rassemblement mondial d’innovateurs, d’entrepreneurs qui créent des emplois, lancent des startups, donnent vie à des idées, favorisent la croissance économique et contribuent à l’amélioration du bien-être social. Chaque année, au mois de Novembre, la GEW inspire les gens via des activités - locales, nationales et internationales - conçues pour les aider à explorer leur potentiel d’auto-entrepreneur et d’innovateurs.</p>
+            
+            <form action="#" class="registration-form">
+                <!-- Question: Souhaitez vous organiser un événement durant la semaine mondiale de l'entrepreunariat ? -->
+                <fieldset class="input-field">
+                    <legend>Souhaitez-vous organiser un événement durant la Semaine Mondiale de l'Entrepreneuriat ?</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="organize_yes" name="organize_event" value="oui" required>
+                        <label for="organize_yes">Oui</label>
+                        <input type="radio" id="organize_no" name="organize_event" value="non" required>
+                        <label for="organize_no">Non</label>
+                    </div>
+                </fieldset>
+
+                <!-- Question: Ville -->
+                <div class="input-field">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city" placeholder="Votre ville">
+                </div>
+
+                <!-- Question: Comment souhaitez-vous participer à la GEW? -->
+                <fieldset class="input-field">
+                    <legend>Comment souhaitez-vous participer à la GEW?</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="participate_benevole" name="participation_type[]" value="Bénévole du Comité d'organisation">
+                        <label for="participate_benevole">Bénévole du Comité d'organisation</label><br>
+                        <input type="checkbox" id="participate_exposant" name="participation_type[]" value="Exposant">
+                        <label for="participate_exposant">Exposant</label><br>
+                        <input type="checkbox" id="participate_speaker" name="participation_type[]" value="Speaker">
+                        <label for="participate_speaker">Speaker</label><br>
+                        <input type="checkbox" id="participate_presse" name="participation_type[]" value="Presse">
+                        <label for="participate_presse">Presse</label><br>
+                        <input type="checkbox" id="participate_partenaire" name="participation_type[]" value="Partenaire">
+                        <label for="participate_partenaire">Partenaire</label>
+                    </div>
+                </fieldset>
+
+                <!-- Question: Présentation de l'entrepreneur et de l'activité : -->
+                <div class="input-field">
+                    <label for="presentation">Présentation de l'entrepreneur et de l'activité :</label>
+                    <textarea id="presentation" name="presentation" rows="5" placeholder="Décrivez votre activité..."></textarea>
+                </div>
+
+                <!-- Question: Depuis quand êtes vous dans l'entrepreneuriat ? -->
+                <div class="input-field">
+                    <label for="entrepreneurship_start">Depuis quand êtes-vous dans l'entrepreneuriat ?</label>
+                    <input type="text" id="entrepreneurship_start" name="entrepreneurship_start" required placeholder="Ex: 2015">
+                </div>
+
+                <!-- Question: Type et description de l'événement -->
+                <div class="input-field">
+                    <label for="event_description">Type et description de l'événement</label>
+                    <textarea id="event_description" name="event_description" rows="5" required placeholder="Décrivez votre événement..."></textarea>
+                </div>
+
+                <!-- Question: Date de l'événement -->
+                <div class="input-field">
+                    <label for="event_date">Date de l'événement *</label>
+                    <input type="date" id="event_date" name="event_date" required>
+                </div>
+
+                <!-- Question: Heure de l'événement -->
+                <div class="input-field">
+                    <label for="event_time">Heure de l'événement</label>
+                    <input type="time" id="event_time" name="event_time">
+                </div>
+
+                <!-- Question: Avez-vous un lieu pour l'événement? -->
+                <fieldset class="input-field">
+                    <legend>Avez-vous un lieu pour l'événement?</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="location_yes" name="has_location" value="oui" required>
+                        <label for="location_yes">Oui</label>
+                        <input type="radio" id="location_no" name="has_location" value="non" required>
+                        <label for="location_no">Non</label>
+                    </div>
+                </fieldset>
+
+                <!-- Question: Si Oui donnez l'adresse. -->
+                <div class="input-field">
+                    <label for="location_address">Si Oui, donnez l'adresse.</label>
+                    <textarea id="location_address" name="location_address" rows="3" placeholder="Adresse de l'événement"></textarea>
+                </div>
+
+                <!-- Question: Cible(s) -->
+                <fieldset class="input-field">
+                    <legend>Cible(s)</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="target_students" name="target_audience[]" value="Etudiants">
+                        <label for="target_students">Etudiants</label><br>
+                        <input type="checkbox" id="target_entrepreneurs" name="target_audience[]" value="Entrepreneurs">
+                        <label for="target_entrepreneurs">Entrepreneurs</label><br>
+                        <input type="checkbox" id="target_decideurs" name="target_audience[]" value="Décideurs">
+                        <label for="target_decideurs">Décideurs</label><br>
+                        <input type="checkbox" id="target_investisseurs" name="target_audience[]" value="Investisseurs">
+                        <label for="target_investisseurs">Investisseurs</label><br>
+                        <input type="checkbox" id="target_chercheurs" name="target_audience[]" value="Chercheurs">
+                        <label for="target_chercheurs">Chercheurs</label>
+                    </div>
+                </fieldset>
+
+                <!-- Question: Numéro de téléphone -->
+                <div class="input-field">
+                    <label for="phone_number">Numéro de téléphone</label>
+                    <input type="tel" id="phone_number" name="phone_number" required placeholder="Ex: +221 77 123 45 67">
+                </div>
+
+                <!-- Question: Email -->
+                <div class="input-field">
+                    <label for="contact_email">Email</label>
+                    <input type="email" id="contact_email" name="contact_email" required placeholder="votre@email.com">
+                </div>
+
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+            <p class="deadline">Date limite des inscriptions: 03 novembre 2024</p>
+            <a href="index.html" class="back-home">← Retour à l'accueil</a>
+        </section>
+        <!-- FIN SECTION FORMULAIRE D'INSCRIPTION -->
+
+        <!-- DEBUT PIED DE PAGE (FOOTER) -->
+        <footer class="dark-footer">
+            <address class="contact-info">
+                <p>
+                    <span class="label">Téléphone</span><br>
+                    <a href="tel:+221338273831" class="value">+221 33 827 38 31</a>
+                </p>
+                <p>
+                    <span class="label">Adresse mail</span><br>
+                    <a href="mailto:officedakar@jokkolabs.com" class="value">officedakar@jokkolabs.com</a>
+                </p>
+                <p>
+                    <span class="label">Dakar</span><br>
+                    Sacré-Cœur3 Villa N°9653, 4eme phase 41, voie de degagement N, Dakar
+                </p>
+            </address>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/jokkolabsDakar/" target="_blank">
+                        <img src="https://www.jokkolabs.net/images/social-network/fb.svg" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/JklDakar" target="_blank">
+                        <img src="https://www.jokkolabs.net/images/social-network/x.svg" alt="X (Twitter)">
+                    </a>
+                    <a href="https://www.instagram.com/jokkolabs_sn/" target="_blank">
+                        <img src="https://www.jokkolabs.net/images/social-network/ig.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/jokkolabs/" target="_blank">
+                        <img src="https://www.jokkolabs.net/images/social-network/lk.svg" alt="LinkedIn">
+                    </a>
+                </div>
+                <p class="copyright-text"><small>&copy; 2024 - Design & Build by Der Design Studio</small></p>
+            </div>
+        </footer>
+        <!-- FIN PIED DE PAGE (FOOTER) -->
+    </main>
+    <!-- FIN CONTENU DE LA PAGE -->
+</body>
+</html>
