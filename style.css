@@ -155,7 +155,7 @@ a {
     width: 140px;             /* Taille discrète et pro */
     margin-bottom: 30px;      /* Crée l'espace avant le numéro de téléphone */
     display: block;           /* Force le texte à aller à la ligne en dessous */
-    background: #1e3a2c;
+    background: transparent;  /* Supprime le fond carré - logo clean */
 
 }
 
