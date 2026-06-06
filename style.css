@@ -126,7 +126,7 @@ body {
 }
 
 .main-logo {
-    width: 250px;
+    width: 180px;
     height: auto;
     mix-blend-mode: normal; /* Affiche le logo clairement sans effet de fusion */
     opacity: 1; /* Logo totalement opaque */
