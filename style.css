@@ -126,9 +126,11 @@ body {
 }
 
 .main-logo {
-    width: 180px;
-    mix-blend-mode: lighten; /* Fond le logo avec la couleur du background */
-    opacity: 0.95;
+    width: 250px;
+    height: auto;
+    mix-blend-mode: normal; /* Affiche le logo clairement sans effet de fusion */
+    opacity: 1; /* Logo totalement opaque */
+    filter: none; /* Pas de filtre appliqué */
 }
 
 h1 {
